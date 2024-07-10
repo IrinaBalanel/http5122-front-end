@@ -1,0 +1,53 @@
+#smoke, #smoke-two, #smoke-three{
+    display: none;
+}
+.smoke-animated-one{
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(70px);
+        top: 50%;
+        
+    }
+
+    100% {
+        transform: translateY(0px);
+        top: 1%;
+    }
+}
+
+.smoke-animated-two{
+    animation: animate-two 3s linear infinite;
+}
+
+@keyframes animate-two {
+    0% {
+        transform: translateY(40px);
+        top: 50%;
+        
+    }
+
+    100% {
+        transform: translateY(0px);
+        top: 1%;
+    }
+}
+
+.smoke-animated-three{
+    animation: animate-three 4s linear infinite;
+}
+
+@keyframes animate-three {
+    0% {
+        transform: translateY(50px);
+        top: 50%;
+        
+    }
+
+    100% {
+        transform: translateY(0px);
+        top: 1%;
+    }
+}

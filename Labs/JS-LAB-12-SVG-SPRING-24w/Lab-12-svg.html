@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>SVG Lab</title>
+	<script src="/Lab-12-svg.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body id="svgBody">
+
+<div id="svgDiv">
+
+	<svg width="300" height="300"  xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<!--ALL OF YOUR SVG ELEMENTS GO HERE INSIDE THE <svg PARENT ELEMENT.-->
+		
+		<rect id="sky" width="300" height="170" fill="#A6EAFF"></rect>
+		<rect id="grass" width="300" height="140" y="170" fill="green"></rect>
+		<rect id="base" width="100" height="100" x="50" y="120" fill="grey" stroke="black" stroke-width="2"></rect>
+		<circle id="smoke" cx="55" cy="20" r="7" fill="grey"></circle>
+		<circle id="smoke-two" cx="55" cy="20" r="7" fill="grey"></circle>
+		<circle id="smoke-three" cx="55" cy="20" r="7" fill="grey"></circle>
+		<rect id="chemney" width="10" height="40" x="50" y="70" fill="grey" stroke="black" stroke-width="2"></rect>
+		<polygon id="roof" points="100,50 180,150 20,150" style="fill:brown;stroke:black;stroke-width:2" />
+		<rect id="door" width="40" height="40" x="80" y="180" fill="brown" stroke="black" stroke-width="2"></rect>
+		<circle id="window" cx="100" cy="120" r="15" fill="grey" stroke="black" stroke-width="2"></circle>
+		<circle id="sun" cx="230" cy="40" r="20" fill="yellow" stroke="black" stroke-width="2"></circle>
+	<!-- UNCOMMENT THE LINES BELOW TO SEE HOW I USED THE <pattern> SVG ELEMENT WITH A SQUARE TO CREATE A 10px by 10px GRID OVERLAY TO MAKE LOCATING COORDINATES EASIER WHILE I CREATED THE GRAPHIC. -->
+		<!-- <pattern id="dotGrid" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10"  >
+			<rect width="10" height="10" stroke="black" fill="none" />
+		</pattern>
+		<rect width="300" height="300" fill="url(#dotGrid)" /> -->
+	</svg>
+
+</div>
+</body>
+</html>
